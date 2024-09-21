@@ -1,0 +1,207 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #333;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: background 0.3s ease;
+}
+
+.navbar .nav-links a.active, 
+.navbar .nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 50px 0;
+    background-color: #fff;
+}
+
+.contact-section h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.info-item {
+    flex: 1;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.info-item h3 {
+    font-size: 1.8em;
+}
+
+.info-item p {
+    font-size: 1em;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #575757;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .info-item {
+        margin-bottom: 20px;
+    }
+    
+    .contact-form {
+        padding: 0 20px;
+    }
+}
+/* Contact Form for iPhone 12 Pro */
+@media (max-width: 1170px) {
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 10px; /* Add padding for better touch interaction */
+    }
+
+    .contact-form {
+        padding: 0 15px; /* More padding for mobile users */
+    }
+
+    .contact-form input, .contact-form textarea {
+        font-size: 1em; /* Ensure input fields are readable on smaller screens */
+    }
+}
+
+
+/* Responsive Design for iPhone 12 Pro */
+@media (max-width: 320px) { /* iPhone 12 Pro portrait */
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col {
+        margin: 10px 0;
+    }
+
+    .footer-col h3 {
+        font-size: 14px;
+    }
+
+    .footer-col p {
+        font-size: 12px;
+    }
+}
+
+
+/* Responsive Design for iPhone 12 Pro */
+@media (max-width: 320px) { /* iPhone 12 Pro portrait */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar .nav-links li {
+        margin: 5px 0;
+    }
+
+    .navbar .logo a {
+        font-size: 18px;
+    }
+}

@@ -1,0 +1,246 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+}
+
+.navbar .logo a {
+    color: #fff;
+    font-size: 20px; /* Adjusted size */
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px; /* Adjusted padding */
+    transition: background 0.3s ease;
+}
+
+.navbar .nav-links a.active, 
+.navbar .nav-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+/* Developer Section */
+.developer-section {
+    padding: 30px 0; /* Reduced padding */
+}
+
+.developer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.developer-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex; /* Add this */
+    flex-direction: column; /* Add this */
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+}
+
+
+.developer-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.developer-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.developer-info {
+    padding: 20px;
+    display: none;
+    text-align: center;
+}
+
+.developer-info h3 {
+    margin-bottom: 10px;
+    font-size: 1.4em; /* Adjusted font size */
+}
+
+.developer-info p {
+    color: #555;
+    font-size: 1em;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0; /* Reduced footer padding */
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.footer-col {
+    flex: 1;
+    margin: 10px;
+}
+
+.footer-col h3 {
+    margin-bottom: 10px;
+    font-size: 16px; /* Reduced font size */
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-col p {
+    margin: 0;
+    font-size: 14px; /* Reduced text size */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px; /* Reduced font size */
+    border-top: 1px solid #575757;
+}
+
+/* Social Media Icons */
+.social-links img {
+    width: 20px; /* Adjusted size of social media icons */
+    height: 20px;
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .developer-grid {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .logo a {
+        font-size: 18px; /* Adjusted logo size for smaller screens */
+    }
+
+    .navbar .nav-links a {
+        padding: 8px 12px; /* Adjusted padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .developer-info h3 {
+        font-size: 1.2em; /* Further adjustment for very small screens */
+    }
+
+    .navbar .logo a {
+        font-size: 16px; /* Smaller logo */
+    }
+
+    .developer-card img {
+        height: 100px; /* Smaller image for mobile */
+    }
+}
+
+
+
+/* Responsive Design for iPhone 12 Pro */
+@media (max-width: 320px) { /* iPhone 12 Pro portrait */
+    .footer-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-col {
+        margin: 10px 0;
+    }
+
+    .footer-col h3 {
+        font-size: 14px;
+    }
+
+    .footer-col p {
+        font-size: 12px;
+    }
+}
+
+
+/* Responsive Design for iPhone 12 Pro */
+@media (max-width: 320px) { /* iPhone 12 Pro portrait */
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .navbar .nav-links li {
+        margin: 5px 0;
+    }
+
+    .navbar .logo a {
+        font-size: 18px;
+    }
+}

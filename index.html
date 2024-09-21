@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museum Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#">Museum</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exibition.html">Exhibitions</a></li>
+            <li><a href="event.html">Events</a></li>
+            <li><a href="visit.html">Visit</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="developer.html" class="developer">Developer</a>
+        </ul>
+        <div class="menu-icon" id="menu-icon">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        
+    </nav>
+
+    <section class="hero-section"></section>
+        <video autoplay muted loop id="background-video">
+            <source src="museum.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="content">
+            <h1>Welcome to Our Museum</h1>
+            <p>Explore the history, art, and culture with us.</p>
+            <a href="#exhibitions" class="btn">Explore Now</a>
+        </div>
+    </section>
+
+    <footer class="footer"></footer>
+        <div class="container">
+            <div class="footer-row">
+                <!-- About Section -->
+                <div class="footer-col">
+                    <h3>About Us</h3>
+                    <p>Discover the art, history, and culture at our museum. Our mission is to educate and inspire through carefully curated exhibits.</p>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#exhibitions">Exhibitions</a></li>
+                        <li><a href="#events">Events</a></li>
+                        <li><a href="#visit">Visit</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        
+                    </ul>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p>123 Museum Street, City, Country</p>
+                    <p>Email: info@museum.com</p>
+                    <p>Phone: +123 456 789</p>
+                </div>
+
+                <!-- Social Media Links -->
+                <div class="footer-col">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><img src="facebook.png" alt="Facebook"></a>
+                        <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                        <a href="#"><img src="instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Museum. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
